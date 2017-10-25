@@ -1,12 +1,16 @@
 # ssh_mitm_poc
 POC of an sshd MiTM w/ publickey authentication.
+See the `poc` branch for getting an idea of what the check is.
 
 ## What's this?
 It's a paramiko based ssh/sshd that uses session-fixation in order to generate a verifiable publickey challenge that is non-volatile.
 
 In other word, it's a POC that shows you can have this:
 
+```
 [genuine ssh client] ===ssh connect===> [mitm sshd] ===ssh connect===> [genuine sshd]
+```
+
 
 Where:
 - mitm sshd: gets the `session id` from genuine sshd
