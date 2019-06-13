@@ -1,3 +1,7 @@
+> **ARCHIVED** This repository is archived. You can use it to test implementations, but OpenSSH and other
+> implementations are not vulnerable. Some custom implementation may be.
+
+
 # ssh_mitm_poc
 POC of an sshd MiTM w/ publickey authentication.
 See the `poc` branch for getting an idea of what the check is.
